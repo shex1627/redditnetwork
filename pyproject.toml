@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reddit-network"
+version = "0.1.0"
+description = "Discover related subreddits by analyzing where top commenters are active"
+requires-python = ">=3.11"
+dependencies = [
+    "praw>=7.7,<8.0",
+    "anthropic>=0.40",
+    "click>=8.1",
+    "rich>=13.0",
+    "python-dotenv>=1.0",
+    "streamlit>=1.30",
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-mock>=3.12",
+]
+
+[project.scripts]
+reddit-network = "reddit_network.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: tests that hit live APIs (deselect with -m 'not integration')",
+]
