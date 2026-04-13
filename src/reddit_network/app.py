@@ -11,7 +11,7 @@ import streamlit as st
 
 from reddit_network.config import DEFAULT_MIN_RELEVANCE, DEFAULT_TOP_N_COMMENTERS
 
-API_BASE = "http://localhost:8000"
+API_BASE = "http://localhost:8550"
 
 st.set_page_config(
     page_title="Reddit Network Discovery",
@@ -106,6 +106,11 @@ if st.button("Discover", type="primary", disabled=not post_url):
                 "Could not connect to the API server. "
                 "Make sure it's running: `uvicorn reddit_network.api:app`"
             )
+            st.stop()
+
+        if resp.status_code == 429:
+            status.update(label="Rate limited", state="error")
+            st.error("Too many requests — please wait a minute before trying again.")
             st.stop()
 
         if resp.status_code != 200:

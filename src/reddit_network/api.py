@@ -4,8 +4,12 @@ from __future__ import annotations
 
 import logging
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
+from slowapi import Limiter
+from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
 
 from reddit_network.config import DEFAULT_MIN_RELEVANCE, DEFAULT_TOP_N_COMMENTERS
 from reddit_network.pipeline import discover_subreddits
@@ -17,7 +21,19 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
+
+limiter = Limiter(key_func=get_remote_address)
 app = FastAPI(title="Reddit Network Discovery", version="0.1.0", docs_url=None, redoc_url=None)
+app.state.limiter = limiter
+
+
+@app.exception_handler(RateLimitExceeded)
+async def _rate_limit_handler(request: Request, exc: RateLimitExceeded) -> JSONResponse:
+    logger.warning("Rate limit exceeded: %s", request.client.host)
+    return JSONResponse(
+        status_code=429,
+        content={"detail": "Rate limit exceeded. Try again in a minute."},
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -82,7 +98,8 @@ class DiscoverResponse(BaseModel):
 
 
 @app.post("/discover", response_model=DiscoverResponse)
-def discover(req: DiscoverRequest) -> DiscoverResponse:
+@limiter.limit("5/minute")
+def discover(request: Request, req: DiscoverRequest) -> DiscoverResponse:
     """Run the discovery pipeline and return structured results."""
     logger.info("POST /discover — url=%s top_n=%d min_rel=%d", req.post_url, req.top_n_commenters, req.min_relevance)
     try:

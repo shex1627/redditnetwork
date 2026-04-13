@@ -1,6 +1,6 @@
 # Backlog: Edge Rate Limiting via Cloudflare
 
-## Status: Planned
+## Status: In-app done, Cloudflare pending
 
 ## Problem
 
@@ -42,6 +42,15 @@ Per: IP
 Action: Block (429)
 Duration: 1 minute
 ```
+
+## Done
+
+- **slowapi defense-in-depth** — `5/minute` per IP on `/discover` endpoint (`api.py`). Returns 429 with JSON `{"detail": "Rate limit exceeded. Try again in a minute."}`. Streamlit UI handles 429 with a user-friendly message.
+
+## Still TODO
+
+- **Cloudflare Rate Limiting Rule** — configure in Dashboard > Security > WAF > Rate limiting rules (see config above). This is the primary gate; slowapi is the backup.
+- **(Optional) Cloudflare Access / Zero Trust** — require auth to reach the tunnel.
 
 ## Not Doing
 
