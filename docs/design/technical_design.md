@@ -44,10 +44,11 @@ Static criteria for v0.1 (no LLM needed here):
 
 | Criterion | Weight | Rationale |
 |-----------|--------|-----------|
-| Comment score (upvotes - downvotes) | 0.5 | Community-validated quality |
-| Comment length (chars) | 0.2 | Longer comments tend to be more substantive |
-| Account age | 0.15 | Older accounts are less likely to be bots/throwaways |
-| Comment karma (profile) | 0.15 | Track record of quality contributions |
+| Comment score (upvotes - downvotes) | 0.35 | Community-validated quality |
+| Activity richness (unique subreddits) | 0.30 | Users active in more subs are more valuable for discovery |
+| Comment length (chars) | 0.15 | Longer comments tend to be more substantive |
+| Account age | 0.10 | Older accounts are less likely to be bots/throwaways |
+| Comment karma (profile) | 0.10 | Track record of quality contributions |
 
 Produce a ranked list. Take **top N** (configurable, default 20).
 

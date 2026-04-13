@@ -50,14 +50,19 @@ def rank_commenters(
     max_length = max(len(c.body) for c, _ in candidates) or 1
     max_age = max(p.account_age_days for _, p in candidates) or 1
     max_karma = max(abs(p.comment_karma) for _, p in candidates) or 1
+    max_richness = max(
+        len({a.subreddit for a in p.activities}) for _, p in candidates
+    ) or 1
 
     ranked: list[RankedCommenter] = []
     for comment, profile in candidates:
+        unique_subs = len({a.subreddit for a in profile.activities})
         weighted = (
-            w["comment_score"] * _normalize(comment.score, max_score)
-            + w["comment_length"] * _normalize(len(comment.body), max_length)
-            + w["account_age"] * _normalize(profile.account_age_days, max_age)
-            + w["comment_karma"] * _normalize(profile.comment_karma, max_karma)
+            w.get("comment_score", 0) * _normalize(comment.score, max_score)
+            + w.get("comment_length", 0) * _normalize(len(comment.body), max_length)
+            + w.get("account_age", 0) * _normalize(profile.account_age_days, max_age)
+            + w.get("comment_karma", 0) * _normalize(profile.comment_karma, max_karma)
+            + w.get("activity_richness", 0) * _normalize(unique_subs, max_richness)
         )
         ranked.append(
             RankedCommenter(

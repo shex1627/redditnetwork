@@ -1,0 +1,1408 @@
+{
+    "post": {
+        "post_id": "1sdcv73",
+        "title": "Karpathy said \u201cthere is room for an incredible new product\u201d for LLM knowledge bases. I built it as a Claude Code skill",
+        "subreddit": "Rag",
+        "score": 53,
+        "num_comments": 14,
+        "url": "https://www.reddit.com/r/Rag/comments/1sdcv73/karpathy_said_there_is_room_for_an_incredible_new/"
+    },
+    "filtered_subreddits": [
+        {
+            "name": "LocalLLaMA",
+            "commenter_count": 3,
+            "total_activity": 26,
+            "relevance_score": 9,
+            "reason": "Directly focused on local LLM implementations and knowledge bases"
+        },
+        {
+            "name": "ClaudeAI",
+            "commenter_count": 3,
+            "total_activity": 17,
+            "relevance_score": 9,
+            "reason": "Dedicated to Claude AI features and applications"
+        },
+        {
+            "name": "LocalLLM",
+            "commenter_count": 3,
+            "total_activity": 11,
+            "relevance_score": 9,
+            "reason": "Focuses on local language model implementations"
+        },
+        {
+            "name": "Anthropic",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "relevance_score": 9,
+            "reason": "Claude is Anthropic's product, directly relevant"
+        },
+        {
+            "name": "ClaudeCode",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 9,
+            "reason": "Directly about Claude Code, the implementation method"
+        },
+        {
+            "name": "LLMDevs",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 9,
+            "reason": "Developers building LLM applications and knowledge systems"
+        },
+        {
+            "name": "vibecoding",
+            "commenter_count": 3,
+            "total_activity": 25,
+            "relevance_score": 8,
+            "reason": "Community around coding tools and Claude integration"
+        },
+        {
+            "name": "ollama",
+            "commenter_count": 2,
+            "total_activity": 6,
+            "relevance_score": 8,
+            "reason": "Tool for running local LLMs relevant to RAG systems"
+        },
+        {
+            "name": "KnowledgeGraph",
+            "commenter_count": 1,
+            "total_activity": 8,
+            "relevance_score": 8,
+            "reason": "Knowledge bases and graph structures core to RAG systems"
+        },
+        {
+            "name": "aiagents",
+            "commenter_count": 1,
+            "total_activity": 8,
+            "relevance_score": 8,
+            "reason": "LLM-based agents use knowledge bases for context"
+        },
+        {
+            "name": "airesearch",
+            "commenter_count": 1,
+            "total_activity": 5,
+            "relevance_score": 8,
+            "reason": "Research on LLM and RAG methodologies"
+        },
+        {
+            "name": "LangChain",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 8,
+            "reason": "Framework for building RAG and LLM applications"
+        },
+        {
+            "name": "AiBuilders",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 8,
+            "reason": "Building products with AI and LLMs"
+        },
+        {
+            "name": "VibeCodeDevs",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 8,
+            "reason": "Developer community around Claude Code tools"
+        },
+        {
+            "name": "AI_Agents",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 8,
+            "reason": "LLM agents use knowledge bases for reasoning"
+        },
+        {
+            "name": "AIAgentsInAction",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 8,
+            "reason": "Practical applications of LLM agents with knowledge"
+        },
+        {
+            "name": "generativeAI",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 8,
+            "reason": "LLMs and generative AI knowledge base systems"
+        },
+        {
+            "name": "vibecodeapp",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 8,
+            "reason": "Community for vibe coding app featuring Claude"
+        },
+        {
+            "name": "vibecodingcommunity",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 8,
+            "reason": "Community around Claude Code implementation"
+        },
+        {
+            "name": "Agentic_AI_For_Devs",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 8,
+            "reason": "Agentic AI systems use knowledge bases"
+        },
+        {
+            "name": "agenticAI",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 8,
+            "reason": "Agentic AI systems with knowledge integration"
+        },
+        {
+            "name": "Python",
+            "commenter_count": 2,
+            "total_activity": 16,
+            "relevance_score": 7,
+            "reason": "Primary language for LLM and RAG implementation"
+        },
+        {
+            "name": "ArtificialInteligence",
+            "commenter_count": 2,
+            "total_activity": 4,
+            "relevance_score": 7,
+            "reason": "Broad AI discussion including LLM knowledge bases"
+        },
+        {
+            "name": "mcp",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 7,
+            "reason": "Model context protocol relevant to LLM integrations"
+        },
+        {
+            "name": "PromptEngineering",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 7,
+            "reason": "Techniques for effective LLM knowledge base usage"
+        },
+        {
+            "name": "AIVoice_Agents",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 7,
+            "reason": "LLM-based agents with knowledge integration"
+        },
+        {
+            "name": "aiecosystem",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 7,
+            "reason": "Part of broader AI ecosystem including RAG"
+        },
+        {
+            "name": "AIToolBench",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 7,
+            "reason": "Benchmarking AI tools including LLM systems"
+        },
+        {
+            "name": "buildinpublic",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 7,
+            "reason": "Building and shipping LLM product in public"
+        },
+        {
+            "name": "SideProject",
+            "commenter_count": 2,
+            "total_activity": 3,
+            "relevance_score": 6,
+            "reason": "Post describes building a product, relevant to side projects"
+        },
+        {
+            "name": "startups",
+            "commenter_count": 1,
+            "total_activity": 12,
+            "relevance_score": 6,
+            "reason": "Building new products for LLM applications"
+        },
+        {
+            "name": "legaltech",
+            "commenter_count": 1,
+            "total_activity": 6,
+            "relevance_score": 6,
+            "reason": "Knowledge bases are critical for legal AI applications"
+        },
+        {
+            "name": "singularity",
+            "commenter_count": 1,
+            "total_activity": 5,
+            "relevance_score": 6,
+            "reason": "Discussion of advanced AI systems and LLMs"
+        },
+        {
+            "name": "Tools",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "relevance_score": 6,
+            "reason": "RAG and LLM tools for knowledge base management"
+        },
+        {
+            "name": "Agentic_SEO",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "relevance_score": 6,
+            "reason": "AI agents with knowledge bases for automation"
+        },
+        {
+            "name": "startup",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "relevance_score": 6,
+            "reason": "Building new LLM-based products"
+        },
+        {
+            "name": "opensource",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 6,
+            "reason": "Open source RAG and LLM tools and frameworks"
+        },
+        {
+            "name": "SaaS",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 6,
+            "reason": "Building SaaS products around LLM knowledge bases"
+        },
+        {
+            "name": "AIIncomeLab",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 6,
+            "reason": "Monetizing AI products like LLM knowledge bases"
+        },
+        {
+            "name": "cursor",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 6,
+            "reason": "AI code editor with Claude integration"
+        },
+        {
+            "name": "Researcher",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 6,
+            "reason": "Research on LLM and knowledge base systems"
+        },
+        {
+            "name": "VoiceAI_Automation",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 6,
+            "reason": "LLM agents with voice and knowledge integration"
+        },
+        {
+            "name": "programming",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 6,
+            "reason": "Programming techniques for LLM and RAG systems"
+        },
+        {
+            "name": "cybersecurity",
+            "commenter_count": 1,
+            "total_activity": 25,
+            "relevance_score": 5,
+            "reason": "Related to security aspects of LLM and knowledge base systems"
+        },
+        {
+            "name": "iOSProgramming",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "relevance_score": 5,
+            "reason": "Building Claude-based skills for iOS applications"
+        },
+        {
+            "name": "passive_income",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "relevance_score": 5,
+            "reason": "Building products for LLM market monetization"
+        },
+        {
+            "name": "StableDiffusion",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "relevance_score": 5,
+            "reason": "Related to broader generative AI ecosystem"
+        },
+        {
+            "name": "blender",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "relevance_score": 5,
+            "reason": "3D tools can integrate with LLM knowledge bases"
+        }
+    ],
+    "raw_subreddits": [
+        {
+            "name": "LocalLLaMA",
+            "commenter_count": 3,
+            "total_activity": 26,
+            "avg_score": 0.92
+        },
+        {
+            "name": "vibecoding",
+            "commenter_count": 3,
+            "total_activity": 25,
+            "avg_score": 2.36
+        },
+        {
+            "name": "ClaudeAI",
+            "commenter_count": 3,
+            "total_activity": 17,
+            "avg_score": 5.76
+        },
+        {
+            "name": "LocalLLM",
+            "commenter_count": 3,
+            "total_activity": 11,
+            "avg_score": -0.27
+        },
+        {
+            "name": "Python",
+            "commenter_count": 2,
+            "total_activity": 16,
+            "avg_score": 3.31
+        },
+        {
+            "name": "ollama",
+            "commenter_count": 2,
+            "total_activity": 6,
+            "avg_score": 3.83
+        },
+        {
+            "name": "rust",
+            "commenter_count": 2,
+            "total_activity": 6,
+            "avg_score": -3.67
+        },
+        {
+            "name": "ArtificialInteligence",
+            "commenter_count": 2,
+            "total_activity": 4,
+            "avg_score": 1.0
+        },
+        {
+            "name": "SipsTea",
+            "commenter_count": 2,
+            "total_activity": 3,
+            "avg_score": 1.0
+        },
+        {
+            "name": "SideProject",
+            "commenter_count": 2,
+            "total_activity": 3,
+            "avg_score": 1.67
+        },
+        {
+            "name": "openclaw",
+            "commenter_count": 2,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "MadeMeSmile",
+            "commenter_count": 2,
+            "total_activity": 2,
+            "avg_score": 2.5
+        },
+        {
+            "name": "Advancedastrology",
+            "commenter_count": 1,
+            "total_activity": 32,
+            "avg_score": 27.97
+        },
+        {
+            "name": "cybersecurity",
+            "commenter_count": 1,
+            "total_activity": 25,
+            "avg_score": 0.12
+        },
+        {
+            "name": "u_prodigy_ai",
+            "commenter_count": 1,
+            "total_activity": 23,
+            "avg_score": 1.0
+        },
+        {
+            "name": "VerbisChatDoc",
+            "commenter_count": 1,
+            "total_activity": 21,
+            "avg_score": 1.05
+        },
+        {
+            "name": "NewSkaters",
+            "commenter_count": 1,
+            "total_activity": 13,
+            "avg_score": 7.08
+        },
+        {
+            "name": "AusFinance",
+            "commenter_count": 1,
+            "total_activity": 12,
+            "avg_score": 1.25
+        },
+        {
+            "name": "startups",
+            "commenter_count": 1,
+            "total_activity": 12,
+            "avg_score": 1.5
+        },
+        {
+            "name": "Skateboardlove",
+            "commenter_count": 1,
+            "total_activity": 10,
+            "avg_score": 0.9
+        },
+        {
+            "name": "GlobalOffensive",
+            "commenter_count": 1,
+            "total_activity": 9,
+            "avg_score": 3.67
+        },
+        {
+            "name": "emirates",
+            "commenter_count": 1,
+            "total_activity": 8,
+            "avg_score": 1.5
+        },
+        {
+            "name": "MichaelLevinBiology",
+            "commenter_count": 1,
+            "total_activity": 8,
+            "avg_score": 4.62
+        },
+        {
+            "name": "kairosapp",
+            "commenter_count": 1,
+            "total_activity": 8,
+            "avg_score": 2.0
+        },
+        {
+            "name": "KnowledgeGraph",
+            "commenter_count": 1,
+            "total_activity": 8,
+            "avg_score": 1.5
+        },
+        {
+            "name": "aiagents",
+            "commenter_count": 1,
+            "total_activity": 8,
+            "avg_score": 0.88
+        },
+        {
+            "name": "sticknpokes",
+            "commenter_count": 1,
+            "total_activity": 6,
+            "avg_score": 3.5
+        },
+        {
+            "name": "legaltech",
+            "commenter_count": 1,
+            "total_activity": 6,
+            "avg_score": 0.5
+        },
+        {
+            "name": "ThatsInsane",
+            "commenter_count": 1,
+            "total_activity": 5,
+            "avg_score": 1.4
+        },
+        {
+            "name": "airesearch",
+            "commenter_count": 1,
+            "total_activity": 5,
+            "avg_score": 2.8
+        },
+        {
+            "name": "VibeCodersNest",
+            "commenter_count": 1,
+            "total_activity": 5,
+            "avg_score": 1.2
+        },
+        {
+            "name": "singularity",
+            "commenter_count": 1,
+            "total_activity": 5,
+            "avg_score": 7.4
+        },
+        {
+            "name": "iOSProgramming",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 9.0
+        },
+        {
+            "name": "skateboardhelp",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 8.0
+        },
+        {
+            "name": "MacStudio",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": -0.5
+        },
+        {
+            "name": "skateboarding",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 2.5
+        },
+        {
+            "name": "Anthropic",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 1.5
+        },
+        {
+            "name": "DarkPsychology101",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 2.5
+        },
+        {
+            "name": "perth",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 2.0
+        },
+        {
+            "name": "AusPropertyChat",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 2.0
+        },
+        {
+            "name": "robinhobb",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 4.75
+        },
+        {
+            "name": "printSF",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 1.25
+        },
+        {
+            "name": "Moltbook",
+            "commenter_count": 1,
+            "total_activity": 4,
+            "avg_score": 6.75
+        },
+        {
+            "name": "Tools",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "avg_score": 3.67
+        },
+        {
+            "name": "AskAShittyMechanic",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "avg_score": 1.0
+        },
+        {
+            "name": "TeslaModel3",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "avg_score": 1.33
+        },
+        {
+            "name": "passive_income",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "avg_score": 1.0
+        },
+        {
+            "name": "AlternativeHistory",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "avg_score": 1.33
+        },
+        {
+            "name": "ManchesterUnited",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "avg_score": 8.67
+        },
+        {
+            "name": "Agentic_SEO",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "avg_score": 1.0
+        },
+        {
+            "name": "startup",
+            "commenter_count": 1,
+            "total_activity": 3,
+            "avg_score": 1.33
+        },
+        {
+            "name": "gnome",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 6.5
+        },
+        {
+            "name": "mcp",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "ZedEditor",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 3.5
+        },
+        {
+            "name": "PromptEngineering",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.5
+        },
+        {
+            "name": "audiophile",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 2.5
+        },
+        {
+            "name": "AskAnAustralian",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "projectcar",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 2.0
+        },
+        {
+            "name": "ClaudeCode",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.5
+        },
+        {
+            "name": "redteamsec",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "LangChain",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 6.5
+        },
+        {
+            "name": "StableDiffusion",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "AiBuilders",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "VibeCodeDevs",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "TopologyAI",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "UrsulaKLeGuin",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "bipolar2",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 5.5
+        },
+        {
+            "name": "tattooscratchers",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 2.0
+        },
+        {
+            "name": "LetsFuckWithAstrology",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 292.0
+        },
+        {
+            "name": "anathem",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 3.5
+        },
+        {
+            "name": "AIVoice_Agents",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.5
+        },
+        {
+            "name": "AI_Agents",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 4.5
+        },
+        {
+            "name": "AIAgentsInAction",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 2.5
+        },
+        {
+            "name": "opensource",
+            "commenter_count": 1,
+            "total_activity": 2,
+            "avg_score": 1.0
+        },
+        {
+            "name": "lotus",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "listeningspaces",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 3.0
+        },
+        {
+            "name": "BlossomBuild",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "Porsche_Cayman",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "AskVibecoders",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "StarWars",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 14.0
+        },
+        {
+            "name": "vintageaudio",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 6.0
+        },
+        {
+            "name": "ConservativeNewsWeb",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "xfce",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 11.0
+        },
+        {
+            "name": "lefthanded",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 14.0
+        },
+        {
+            "name": "AskTheWorld",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "StockLaunchers",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "StrangerThingsMemes",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "AIDangers",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "skateboardcirclejerk",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 3.0
+        },
+        {
+            "name": "diyaudio",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 8.0
+        },
+        {
+            "name": "Colognes",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "TAFE",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "australian",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "auscorp",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "refrigeration",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "europe",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "wallstreetbets",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": -1.0
+        },
+        {
+            "name": "Eldenring",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 3.0
+        },
+        {
+            "name": "underlords",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 5.0
+        },
+        {
+            "name": "HongKong",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "Jimny",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "oscp",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "WhyWomenLiveLonger",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "holdmybeer",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "BuyItForLife",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "SuggestAMotorcycle",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "iamverybadass",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": -1.0
+        },
+        {
+            "name": "malelivingspace",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "CCW",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "SaaS",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "technology",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": -4.0
+        },
+        {
+            "name": "AiNews24x7",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "devhumormemes",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "generativeAI",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "aiecosystem",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 6.0
+        },
+        {
+            "name": "grAIve",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "blender",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": -6.0
+        },
+        {
+            "name": "AIIncomeLab",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "vibecodeapp",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 2.0
+        },
+        {
+            "name": "vibecodingcommunity",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "seedance2pro",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "cursor",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "AskAstrologers",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 16.0
+        },
+        {
+            "name": "Nakshatras",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 3.0
+        },
+        {
+            "name": "agedtattoos",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "iching",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "AIToolBench",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "Qoest",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "Researcher",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "VoiceAI_Automation",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "LLMDevs",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 9.0
+        },
+        {
+            "name": "buildinpublic",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "Agentic_AI_For_Devs",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 7.0
+        },
+        {
+            "name": "agenticAI",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        },
+        {
+            "name": "programming",
+            "commenter_count": 1,
+            "total_activity": 1,
+            "avg_score": 1.0
+        }
+    ],
+    "top_commenters": [
+        {
+            "username": "schneeble_schnobble",
+            "comment_score": 12,
+            "weighted_score": 0.809,
+            "comment_karma": 4405,
+            "account_age_days": 1565,
+            "active_subreddits": [
+                "AIDangers",
+                "Anthropic",
+                "AskAShittyMechanic",
+                "AskTheWorld",
+                "AskVibecoders",
+                "BlossomBuild",
+                "ClaudeAI",
+                "ConservativeNewsWeb",
+                "DarkPsychology101",
+                "LocalLLaMA",
+                "MacStudio",
+                "MadeMeSmile",
+                "NewSkaters",
+                "Porsche_Cayman",
+                "PromptEngineering",
+                "Rag",
+                "Skateboardlove",
+                "StarWars",
+                "StockLaunchers",
+                "StrangerThingsMemes",
+                "Tools",
+                "ZedEditor",
+                "audiophile",
+                "diyaudio",
+                "gnome",
+                "iOSProgramming",
+                "lefthanded",
+                "listeningspaces",
+                "lotus",
+                "mcp",
+                "ollama",
+                "openclaw",
+                "pics",
+                "rust",
+                "skateboardcirclejerk",
+                "skateboardhelp",
+                "skateboarding",
+                "vintageaudio",
+                "xfce"
+            ]
+        },
+        {
+            "username": "Happeningtoday613",
+            "comment_score": 1,
+            "weighted_score": 0.5747,
+            "comment_karma": 799,
+            "account_age_days": 2434,
+            "active_subreddits": [
+                "AskAnAustralian",
+                "AskReddit",
+                "AusFinance",
+                "AusPropertyChat",
+                "Colognes",
+                "Documentaries",
+                "EarthPorn",
+                "Eldenring",
+                "Futurology",
+                "HongKong",
+                "Jimny",
+                "OldSchoolCool",
+                "Rag",
+                "Showerthoughts",
+                "TAFE",
+                "TwoXChromosomes",
+                "UpliftingNews",
+                "auscorp",
+                "australian",
+                "aww",
+                "europe",
+                "explainlikeimfive",
+                "mildlyinteresting",
+                "movies",
+                "nottheonion",
+                "perth",
+                "pics",
+                "projectcar",
+                "refrigeration",
+                "robinhobb",
+                "science",
+                "television",
+                "todayilearned",
+                "underlords",
+                "videos",
+                "wallstreetbets",
+                "worldnews"
+            ]
+        },
+        {
+            "username": "Whyme-__-",
+            "comment_score": 1,
+            "weighted_score": 0.4455,
+            "comment_karma": 7345,
+            "account_age_days": 2082,
+            "active_subreddits": [
+                "ArtificialInteligence",
+                "BuyItForLife",
+                "CCW",
+                "ClaudeAI",
+                "ClaudeCode",
+                "LangChain",
+                "LocalLLM",
+                "LocalLLaMA",
+                "MadeMeSmile",
+                "Rag",
+                "SaaS",
+                "SipsTea",
+                "SuggestAMotorcycle",
+                "TeslaModel3",
+                "ThatsInsane",
+                "WhyWomenLiveLonger",
+                "cybersecurity",
+                "emirates",
+                "holdmybeer",
+                "iamverybadass",
+                "malelivingspace",
+                "ollama",
+                "oscp",
+                "redteamsec",
+                "startups",
+                "technology",
+                "vibecoding"
+            ]
+        },
+        {
+            "username": "Interesting-Town-433",
+            "comment_score": 1,
+            "weighted_score": 0.3095,
+            "comment_karma": 79,
+            "account_age_days": 1529,
+            "active_subreddits": [
+                "AIIncomeLab",
+                "AiBuilders",
+                "AiNews24x7",
+                "ArtificialInteligence",
+                "LocalLLM",
+                "LocalLLaMA",
+                "Python",
+                "Rag",
+                "SideProject",
+                "SipsTea",
+                "StableDiffusion",
+                "TopologyAI",
+                "VibeCodeDevs",
+                "VibeCodersNest",
+                "aiecosystem",
+                "airesearch",
+                "blender",
+                "cursor",
+                "devhumormemes",
+                "generativeAI",
+                "grAIve",
+                "openclaw",
+                "passive_income",
+                "seedance2pro",
+                "vibecodeapp",
+                "vibecoding",
+                "vibecodingcommunity"
+            ]
+        },
+        {
+            "username": "pageofswrds",
+            "comment_score": 1,
+            "weighted_score": 0.3025,
+            "comment_karma": 4781,
+            "account_age_days": 521,
+            "active_subreddits": [
+                "Advancedastrology",
+                "AlternativeHistory",
+                "AskAstrologers",
+                "GlobalOffensive",
+                "LetsFuckWithAstrology",
+                "ManchesterUnited",
+                "MichaelLevinBiology",
+                "Moltbook",
+                "Nakshatras",
+                "Rag",
+                "UrsulaKLeGuin",
+                "agedtattoos",
+                "anathem",
+                "bipolar2",
+                "iching",
+                "kairosapp",
+                "printSF",
+                "rust",
+                "singularity",
+                "sticknpokes",
+                "tattooscratchers"
+            ]
+        },
+        {
+            "username": "prodigy_ai",
+            "comment_score": 1,
+            "weighted_score": 0.2379,
+            "comment_karma": 8,
+            "account_age_days": 328,
+            "active_subreddits": [
+                "AIToolBench",
+                "AIVoice_Agents",
+                "Agentic_SEO",
+                "ClaudeAI",
+                "Futurology",
+                "KnowledgeGraph",
+                "LocalLLM",
+                "Qoest",
+                "Rag",
+                "Researcher",
+                "SideProject",
+                "VerbisChatDoc",
+                "VoiceAI_Automation",
+                "aiagents",
+                "legaltech",
+                "startup",
+                "u_prodigy_ai"
+            ]
+        },
+        {
+            "username": "Floppy_Muppet",
+            "comment_score": 1,
+            "weighted_score": 0.1895,
+            "comment_karma": 216,
+            "account_age_days": 1764,
+            "active_subreddits": [
+                "AIAgentsInAction",
+                "AI_Agents",
+                "Agentic_AI_For_Devs",
+                "LLMDevs",
+                "Python",
+                "Rag",
+                "agenticAI",
+                "buildinpublic",
+                "opensource",
+                "programming",
+                "vibecoding"
+            ]
+        }
+    ],
+    "commenters_analyzed": 7,
+    "commenters_skipped": 0,
+    "llm_filtered": true,
+    "warnings": []
+}

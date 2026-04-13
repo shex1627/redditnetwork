@@ -33,6 +33,7 @@ class PostInfo:
     score: int
     num_comments: int
     url: str
+    author: str | None = None
 
 
 @dataclass
@@ -84,6 +85,7 @@ def fetch_post(reddit: praw.Reddit, post_id: str) -> PostInfo:
     submission = reddit.submission(id=post_id)
     # Force fetch by accessing an attribute
     _ = submission.title
+    author = submission.author.name if submission.author else None
     return PostInfo(
         post_id=submission.id,
         title=submission.title,
@@ -91,6 +93,7 @@ def fetch_post(reddit: praw.Reddit, post_id: str) -> PostInfo:
         score=submission.score,
         num_comments=submission.num_comments,
         url=submission.url,
+        author=author,
     )
 
 

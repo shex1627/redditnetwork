@@ -87,27 +87,42 @@ def discover_subreddits(
         )
 
     # --- Step 2: Fetch user profiles ---
+    # Only keep users with actual activity history — users with empty
+    # histories contribute nothing to subreddit discovery and waste a
+    # top-N slot. We fetch from the full author list until we have
+    # enough useful profiles.
     progress("Fetching user profiles...", 0.20)
-    unique_authors = list(dict.fromkeys(c.author for c in comments))
-    authors_to_fetch = unique_authors[: top_n_commenters * 2]
-    logger.info("Fetching profiles for %d unique authors", len(authors_to_fetch))
+    # Include the post author at the front — they're often a domain expert
+    unique_authors = list(dict.fromkeys(
+        ([post.author] if post.author else []) + [c.author for c in comments]
+    ))
+    logger.info("Fetching profiles for up to %d unique authors (including OP)", len(unique_authors))
 
     profiles: dict[str, UserProfile] = {}
     skipped = 0
+    empty_history = 0
     t0 = time.monotonic()
-    for i, author in enumerate(authors_to_fetch):
-        frac = 0.20 + 0.40 * (i / len(authors_to_fetch))
-        progress(f"Fetching profile {i + 1}/{len(authors_to_fetch)}: u/{author}", frac)
+    # Target: top_n_commenters profiles WITH activity. Fetch until we
+    # have enough or run out of authors.
+    target = top_n_commenters
+    for i, author in enumerate(unique_authors):
+        if len(profiles) >= target * 2:
+            break  # enough candidates for ranking
+        frac = 0.20 + 0.40 * (i / max(len(unique_authors), 1))
+        progress(f"Fetching profile {i + 1}: u/{author}", frac)
 
         profile = fetch_user_profile(reddit, author)
-        if profile is not None:
-            profiles[author] = profile
-        else:
+        if profile is None:
             skipped += 1
+        elif not profile.activities:
+            empty_history += 1
+            logger.debug("Skipping u/%s: profile loaded but 0 activities", author)
+        else:
+            profiles[author] = profile
 
     logger.info(
-        "Profiles fetched: %d ok, %d skipped [%.1fs]",
-        len(profiles), skipped, time.monotonic() - t0,
+        "Profiles fetched: %d with activity, %d empty history, %d inaccessible [%.1fs]",
+        len(profiles), empty_history, skipped, time.monotonic() - t0,
     )
 
     # --- Step 3: Rank commenters ---
@@ -130,9 +145,13 @@ def discover_subreddits(
     # --- Step 4: Aggregate subreddits ---
     progress("Aggregating subreddit map...", 0.70)
     ranked_profiles = [r.profile for r in ranked]
+    # For small samples, requiring 2+ commenters per sub filters out
+    # everything. Auto-lower to 1 when we have fewer than 10 commenters.
+    min_commenter_count = 1 if len(ranked) < 10 else 2
     raw_subreddits = aggregate_subreddits(
         profiles=ranked_profiles,
         source_subreddit=post.subreddit,
+        min_commenter_count=min_commenter_count,
     )
     logger.info("Aggregated %d unique subreddits (after blocklist + dedup)", len(raw_subreddits))
 

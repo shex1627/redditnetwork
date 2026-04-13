@@ -17,7 +17,7 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
-app = FastAPI(title="Reddit Network Discovery", version="0.1.0")
+app = FastAPI(title="Reddit Network Discovery", version="0.1.0", docs_url=None, redoc_url=None)
 
 
 # ---------------------------------------------------------------------------
@@ -26,7 +26,7 @@ app = FastAPI(title="Reddit Network Discovery", version="0.1.0")
 
 
 class DiscoverRequest(BaseModel):
-    post_url: str
+    post_url: str = Field(max_length=500)
     top_n_commenters: int = Field(default=DEFAULT_TOP_N_COMMENTERS, ge=1, le=50)
     min_relevance: int = Field(default=DEFAULT_MIN_RELEVANCE, ge=0, le=10)
 
@@ -38,6 +38,7 @@ class PostOut(BaseModel):
     score: int
     num_comments: int
     url: str
+    author: str | None = None
 
 
 class SubredditOut(BaseModel):
@@ -95,7 +96,7 @@ def discover(req: DiscoverRequest) -> DiscoverResponse:
         raise HTTPException(status_code=400, detail=str(exc))
     except Exception as exc:
         logger.exception("Pipeline failed")
-        raise HTTPException(status_code=500, detail=f"Pipeline failed: {exc}")
+        raise HTTPException(status_code=500, detail="Internal server error")
 
     return DiscoverResponse(
         post=PostOut(
@@ -105,6 +106,7 @@ def discover(req: DiscoverRequest) -> DiscoverResponse:
             score=result.post.score,
             num_comments=result.post.num_comments,
             url=result.post.url,
+            author=result.post.author,
         ),
         filtered_subreddits=[
             SubredditOut(

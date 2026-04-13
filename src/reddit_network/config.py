@@ -40,10 +40,11 @@ PIPELINE_TIMEOUT_SECONDS = 120
 # ---------------------------------------------------------------------------
 
 RANKING_WEIGHTS = {
-    "comment_score": 0.50,
-    "comment_length": 0.20,
-    "account_age": 0.15,
-    "comment_karma": 0.15,
+    "comment_score": 0.35,
+    "comment_length": 0.15,
+    "account_age": 0.10,
+    "comment_karma": 0.10,
+    "activity_richness": 0.30,  # unique subreddits in history — more = better for discovery
 }
 
 # ---------------------------------------------------------------------------
@@ -107,18 +108,22 @@ MEGA_SUBREDDIT_BLOCKLIST: set[str] = {
 # URL parsing
 # ---------------------------------------------------------------------------
 
-# Matches reddit.com/r/{sub}/comments/{post_id}/...
+# Matches reddit.com/r/{sub}/comments/{post_id}/... (full URL, not embedded in another domain)
 _REDDIT_URL_PATTERN = re.compile(
     r"(?:https?://)?(?:(?:www|old|new)\.)?reddit\.com"
-    r"/r/(?P<subreddit>[^/]+)/comments/(?P<post_id>[a-z0-9]+)",
+    r"/r/(?P<subreddit>[^/]+)/comments/(?P<post_id>[a-z0-9]+)"
+    r"(?:/[^\s]*)?$",
     re.IGNORECASE,
 )
 
 # Short link: redd.it/{post_id}
 _REDDIT_SHORT_PATTERN = re.compile(
-    r"(?:https?://)?redd\.it/(?P<post_id>[a-z0-9]+)",
+    r"(?:https?://)?redd\.it/(?P<post_id>[a-z0-9]+)"
+    r"(?:/[^\s]*)?$",
     re.IGNORECASE,
 )
+
+MAX_URL_LENGTH = 500
 
 
 def parse_post_url(url: str) -> str:
@@ -126,11 +131,18 @@ def parse_post_url(url: str) -> str:
 
     Returns the post ID string, or raises ValueError.
     """
-    m = _REDDIT_URL_PATTERN.search(url)
+    url = url.strip()
+
+    if len(url) > MAX_URL_LENGTH:
+        raise ValueError(
+            f"URL too long ({len(url)} chars, max {MAX_URL_LENGTH})."
+        )
+
+    m = _REDDIT_URL_PATTERN.match(url)
     if m:
         return m.group("post_id")
 
-    m = _REDDIT_SHORT_PATTERN.search(url)
+    m = _REDDIT_SHORT_PATTERN.match(url)
     if m:
         return m.group("post_id")
 
